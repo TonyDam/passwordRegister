@@ -65,6 +65,9 @@
                                     <segment title="Connexion"/>
                                     <segment title="Inscription"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6TV-Zy-fsC"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

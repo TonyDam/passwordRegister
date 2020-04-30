@@ -29,6 +29,14 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func validateBtnDidPressed(_ sender: Any) {
+        // Inscrire l'user
+    }
+    
+    // Au clic sur Connexion ou Inscription, change le wording du bouton vert en conséquence
+    @IBAction func segmentedChanged(_ sender: Any) {
+        let isConnexionSegment = segmentedControl.selectedSegmentIndex == 0
+        let title = isConnexionSegment ? "Se connecter" : "S'inscrire"
+        validateBtn.setTitle(title, for: .normal)
     }
     
     
