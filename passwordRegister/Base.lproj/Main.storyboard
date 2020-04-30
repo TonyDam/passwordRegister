@@ -52,6 +52,9 @@
                                 <state key="normal" title="Se connecter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="validateBtnDidPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lkr-Kn-n1g"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="weV-QL-A3g">
                                 <rect key="frame" x="20" y="108" width="374" height="32"/>
@@ -85,6 +88,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="x4A-pD-aGw"/>
+                    <connections>
+                        <outlet property="emailTF" destination="HEa-EE-IBe" id="u6Y-06-hSH"/>
+                        <outlet property="nicknameTF" destination="JnN-aB-1KK" id="xC3-Ak-u74"/>
+                        <outlet property="passwordTF" destination="Nxx-uZ-YHM" id="dl1-zm-oZZ"/>
+                        <outlet property="segmentedControl" destination="weV-QL-A3g" id="ddB-D2-Mtq"/>
+                        <outlet property="validateBtn" destination="qie-Ia-1zk" id="fSD-nY-qjI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
