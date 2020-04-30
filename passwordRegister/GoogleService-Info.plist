@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>990816528856-bit55baojqi8j0e56p5999slabqsc2h3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.990816528856-bit55baojqi8j0e56p5999slabqsc2h3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA3GbGMmt4V4HtDNkgXzTKFJPbUW7HQ1d4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>990816528856</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>fr.tonydam.passwordRegister</string>
+	<key>PROJECT_ID</key>
+	<string>passwordregister</string>
+	<key>STORAGE_BUCKET</key>
+	<string>passwordregister.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:990816528856:ios:3191a99b75f0a345866aad</string>
+	<key>DATABASE_URL</key>
+	<string>https://passwordregister.firebaseio.com</string>
+</dict>
+</plist>
