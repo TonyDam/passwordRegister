@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// C'est ici qu'on voit si un user est conecter ou pas, s'il est connecter il fera un segue vers le controller suivant
+class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

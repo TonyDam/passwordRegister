@@ -7,11 +7,13 @@
 //
 
 import UIKit
+// 1. Import Firebase
 import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // Firebase Initialisation
     var window: UIWindow?
 
 
