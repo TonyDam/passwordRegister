@@ -8,15 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Auth View Controller-->
+        <!--Bienvenue !-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuthViewController" customModule="passwordRegister" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Bienvenue !" id="BYZ-38-t0r" customClass="AuthViewController" customModule="passwordRegister" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mail" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-EE-IBe">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-EE-IBe">
                                 <rect key="frame" x="20" y="159" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Wds-Tw-dEQ"/>
@@ -25,16 +25,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mot de passe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-uZ-YHM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-uZ-YHM">
                                 <rect key="frame" x="20" y="213" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="oww-hW-PqQ"/>
                                 </constraints>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pseudo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-aB-1KK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pseudo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-aB-1KK">
                                 <rect key="frame" x="20" y="267" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="tGV-0E-iar"/>
@@ -90,18 +90,54 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x4A-pD-aGw"/>
+                    <navigationItem key="navigationItem" title="Bienvenue" id="x4A-pD-aGw"/>
                     <connections>
                         <outlet property="emailTF" destination="HEa-EE-IBe" id="u6Y-06-hSH"/>
                         <outlet property="nicknameTF" destination="JnN-aB-1KK" id="xC3-Ak-u74"/>
                         <outlet property="passwordTF" destination="Nxx-uZ-YHM" id="dl1-zm-oZZ"/>
                         <outlet property="segmentedControl" destination="weV-QL-A3g" id="ddB-D2-Mtq"/>
                         <outlet property="validateBtn" destination="qie-Ia-1zk" id="fSD-nY-qjI"/>
+                        <segue destination="1f6-dG-2ST" kind="show" identifier="segueToMain" id="4tO-bc-LS3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="103.79464285714285"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="jyL-19-7ab">
+            <objects>
+                <viewController id="1f6-dG-2ST" customClass="MainViewController" customModule="passwordRegister" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0MA-M9-y3a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mainView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKn-RG-0Jm">
+                                <rect key="frame" x="171" y="438" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1TK-2p-cC1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4IX-yA-HTj">
+                        <barButtonItem key="leftBarButtonItem" title="Deconnexion" id="6vK-D6-WyG">
+                            <connections>
+                                <action selector="logoutBtnDidPressed:" destination="1f6-dG-2ST" id="oR1-wA-j6k"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="+" systemItem="add" id="0lk-qV-Aly"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="logoutBtn" destination="6vK-D6-WyG" id="yWE-m3-9L3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qC2-yu-v1w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A55-W9-e1R">
