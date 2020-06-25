@@ -1,9 +1,15 @@
-//
-//  FireDB.swift
-//  passwordRegister
-//
-//  Created by TonyDam on 14/05/2020.
-//  Copyright © 2020 TonyDam. All rights reserved.
-//
-
 import Foundation
+import Firebase
+
+class FireDB {
+    let store = Firestore.firestore()
+    var users: CollectionReference {
+        return store.collection("users")
+    }
+    func addUser(_ uid: String, data: [String: Any]) {
+        users.document(uid).setData(data)
+    }
+    func addCredentials(_ uid: String) {
+        
+    }
+}

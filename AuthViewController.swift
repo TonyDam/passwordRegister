@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  passwordRegister
-//
-//  Created by TonyDam on 23/04/2020.
-//  Copyright © 2020 TonyDam. All rights reserved.
-//
-
 import UIKit
 
 // C'est ici qu'on voit si un user est conecter ou pas, s'il est connecter il fera un segue vers le controller suivant
@@ -22,7 +14,6 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setupUI()
         FireAuth().auth.addStateDidChangeListener { (auth, user) in
             if user != nil {
@@ -31,7 +22,6 @@ class AuthViewController: UIViewController {
                 self.passwordTF.text = ""
                 self.nicknameTF.text = ""
                 self.segmentedControl.selectedSegmentIndex = 0
-                //self.passwordTF.isSecureTextEntry = self.passwordTF.isSecureTextEntry ? false : true
             }
         }
     }
@@ -76,7 +66,8 @@ class AuthViewController: UIViewController {
                 }
                 if let uid = uid {
                     // Créer la collection de credentials du user dans la DB
-                    
+                    let data : [String: Any] = ["uid": uid, "nickname": nickname]
+                    FireDB().addUser(uid, data: data)
                 }
             }
         }

@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C1FBE4AE810A34B1110CF059 /* Pods_passwordRegister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CF2E3914AC8F1ED6C27159 /* Pods_passwordRegister.framework */; };
+		D90289A6246D3BF500CC6914 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90289A5246D3BF500CC6914 /* CreateViewController.swift */; };
 		D912D47F24519C38007EEA64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D912D47E24519C38007EEA64 /* GoogleService-Info.plist */; };
+		D9257544246D2643007A15BE /* FireDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9257543246D2643007A15BE /* FireDB.swift */; };
 		D933EE61245AC4AA0047BA0B /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933EE60245AC4AA0047BA0B /* FireAuth.swift */; };
 		D95024C624518FED00EB3707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95024C524518FED00EB3707 /* AppDelegate.swift */; };
 		D95024C824518FED00EB3707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95024C724518FED00EB3707 /* SceneDelegate.swift */; };
@@ -16,13 +18,16 @@
 		D95024CD24518FED00EB3707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95024CB24518FED00EB3707 /* Main.storyboard */; };
 		D95024CF24518FEE00EB3707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95024CE24518FEE00EB3707 /* Assets.xcassets */; };
 		D95024D224518FEE00EB3707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95024D024518FEE00EB3707 /* LaunchScreen.storyboard */; };
+		D9C722DB2463EFC300704BC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C722DA2463EFC300704BC9 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35CF2E3914AC8F1ED6C27159 /* Pods_passwordRegister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_passwordRegister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A0179A8BA3E6B13EF132AA /* Pods-passwordRegister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passwordRegister.debug.xcconfig"; path = "Target Support Files/Pods-passwordRegister/Pods-passwordRegister.debug.xcconfig"; sourceTree = "<group>"; };
 		BA99AD09E655D424F16AD105 /* Pods-passwordRegister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passwordRegister.release.xcconfig"; path = "Target Support Files/Pods-passwordRegister/Pods-passwordRegister.release.xcconfig"; sourceTree = "<group>"; };
+		D90289A5246D3BF500CC6914 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		D912D47E24519C38007EEA64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9257543246D2643007A15BE /* FireDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDB.swift; sourceTree = "<group>"; };
 		D933EE60245AC4AA0047BA0B /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		D95024C224518FED00EB3707 /* passwordRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95024C524518FED00EB3707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		D95024CE24518FEE00EB3707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95024D124518FEE00EB3707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95024D324518FEE00EB3707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C722DA2463EFC300704BC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D90289A4246D29EC00CC6914 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D95024CE24518FEE00EB3707 /* Assets.xcassets */,
+				D95024D024518FEE00EB3707 /* LaunchScreen.storyboard */,
+				D95024C524518FED00EB3707 /* AppDelegate.swift */,
+				D95024C724518FED00EB3707 /* SceneDelegate.swift */,
+				D912D47E24519C38007EEA64 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D9257542246D2630007A15BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D933EE60245AC4AA0047BA0B /* FireAuth.swift */,
+				D9257543246D2643007A15BE /* FireDB.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D9257545246D265A007A15BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9C722DA2463EFC300704BC9 /* MainViewController.swift */,
+				D95024C924518FED00EB3707 /* AuthViewController.swift */,
+				D90289A5246D3BF500CC6914 /* CreateViewController.swift */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D9257546246D266E007A15BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D95024CB24518FED00EB3707 /* Main.storyboard */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		D95024B924518FED00EB3707 = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +125,11 @@
 		D95024C424518FED00EB3707 /* passwordRegister */ = {
 			isa = PBXGroup;
 			children = (
-				D95024C524518FED00EB3707 /* AppDelegate.swift */,
-				D95024C724518FED00EB3707 /* SceneDelegate.swift */,
-				D95024C924518FED00EB3707 /* AuthViewController.swift */,
-				D95024CB24518FED00EB3707 /* Main.storyboard */,
-				D95024CE24518FEE00EB3707 /* Assets.xcassets */,
-				D95024D024518FEE00EB3707 /* LaunchScreen.storyboard */,
 				D95024D324518FEE00EB3707 /* Info.plist */,
-				D912D47E24519C38007EEA64 /* GoogleService-Info.plist */,
-				D933EE60245AC4AA0047BA0B /* FireAuth.swift */,
+				D90289A4246D29EC00CC6914 /* Supporting files */,
+				D9257546246D266E007A15BE /* Views */,
+				D9257545246D265A007A15BE /* Controllers */,
+				D9257542246D2630007A15BE /* Model */,
 			);
 			path = passwordRegister;
 			sourceTree = "<group>";
@@ -214,9 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95024CA24518FED00EB3707 /* AuthViewController.swift in Sources */,
+				D9257544246D2643007A15BE /* FireDB.swift in Sources */,
+				D90289A6246D3BF500CC6914 /* CreateViewController.swift in Sources */,
 				D933EE61245AC4AA0047BA0B /* FireAuth.swift in Sources */,
 				D95024C624518FED00EB3707 /* AppDelegate.swift in Sources */,
 				D95024C824518FED00EB3707 /* SceneDelegate.swift in Sources */,
+				D9C722DB2463EFC300704BC9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

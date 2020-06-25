@@ -1,18 +1,13 @@
-//
-//  FireAuth.swift
-//  passwordRegister
-//
-//  Created by TonyDam on 30/04/2020.
-//  Copyright © 2020 TonyDam. All rights reserved.
-
-
 import Foundation
 import Firebase
 
 // Pour savoir si un user est enregistré ou pas + création de compte
 class FireAuth {
     let auth = Auth.auth()
-    
+    var currentId: String? {
+        return auth.currentUser?.uid
+    }
+
     // Fonction pour se logué
     func signIn(email: String, password: String, completion: @escaping (_ error: String?,_ uid: String?) -> Void) {
         // Se connecter
@@ -25,6 +20,7 @@ class FireAuth {
             }
         }
     }
+    
     
     //Fonction pour s'enregistrer
     func signUp(email: String, password: String, nickname: String, completion: @escaping (_ error: String?, _ uid: String?) -> Void) {
